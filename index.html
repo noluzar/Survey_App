@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <nav>
+    <label class="logo">_Surveys</label>
+    <ul>
+        <li><a class="active" href="#">FILL OUT FORM</a></li>
+        <li><a class="active" href="results.php">VIEW SURVEY RESULTS</a></li>
+    </ul>
+   </nav>
+   <div>
+    <form id="surveyForm" action="connect.php" method="post">
+        <p>Personal Details:</p><br>
+        <div class="form-group">
+            <label for="name">Full Names</label>
+        <input name="name" type="text" id="name" required>
+        </div><br>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" required>
+        </div><br>
+        <div class="form-group">
+            <label for="DOB">Date of Birth</label>
+            <input name="dob" type="date" id="DOB" required>
+        </div><br>
+        <div class="form-group">
+            <label for="number">Contact Number</label>
+            <input name="number" type="tel" id="number" required>
+        </div><br>
+        <div>
+            What is your favorite food? 
+            <label for="pizza">Pizza</label>
+            <input type="checkbox" name="food[]" value="pizza" id="pizza">
+            <label for="pasta">Pasta</label>
+            <input type="checkbox" name="food[]" value="pasta" id="pasta">
+            <label for="pizza">Pap and Wors</label>
+            <input type="checkbox" name="food[]" value="pap" id="pap">
+            <label for="other">Other</label>
+            <input type="checkbox" name="food[]" value="other" id="other">
+        </div><br>
+        <div>Please rate your level of agreement on a scale from 1 to 5, with 1 being *strongly agree* and 5 being *strongly disagree*. 
+        </div><br>
+    <table bgcolor="skyblue" width="700">
+        <tr bgcolor="lightgrey">
+                <th width="100"></th>
+                <th width="100">Strongly Agree</th>
+                <th width="100">Agree</th>
+                <th width="100">Neutral</th>
+                <th width="100">Disagree</th>
+                <th width="100">Strongly Disagree</th>
+        </tr>
+        <tr bgcolor="white" width="700">
+            <td>I like to watch movies</td>
+            <td>
+                <input type="radio" name="movies" value="1" required>
+            </td>
+            <td>
+                <input type="radio" name="movies" value="2" required>
+            </td>
+            <td>
+                <input type="radio" name="movies" value="3" required>
+            </td>
+            <td>
+                <input type="radio" name="movies" value="4" required>
+            </td>
+            <td>
+                <input type="radio" name="movies" value="5" required>
+            </td>
+        </tr>
+        <tr bgcolor="white" width="700">
+            <td>I like to listen to radio</td>
+            <td>
+                <input type="radio" name="radio" value="1" required>
+            </td>
+            <td>
+                <input type="radio" name="radio" value="2" required>
+            </td>
+            <td>
+                <input type="radio" name="radio" value="3" required>
+            </td>
+            <td>
+                <input type="radio" name="radio" value="4" required>
+            </td>
+            <td>
+                <input type="radio" name="radio" value="5" required>
+            </td>
+        </tr>
+        <tr bgcolor="white" width="700">
+            <td>I like to eat out</td>
+            <td>
+                <input type="radio" name="eatOut" value="1" required>
+            </td>
+            <td>
+                <input type="radio" name="eatOut" value="2" required>
+            </td>
+            <td>
+                <input type="radio" name="eatOut" value="3" required>
+            </td>
+            <td>
+                <input type="radio" name="eatOut" value="4" required>
+            </td>
+            <td>
+                <input type="radio" name="eatOut" value="5" required>
+            </td>
+        </tr>
+        <tr bgcolor="white" width="700">
+            <td>I like to watch TV</td>
+            <td>
+                <input type="radio" name="tv" value="1" required>
+            </td>
+            <td>
+                <input type="radio" name="tv" value="2" required>
+            </td>
+            <td>
+                <input type="radio"name="tv" value="3" required>
+            </td>
+            <td>
+                <input type="radio" name="tv" value="4" required>
+            </td>
+            <td>
+                <input type="radio" name="tv" value="5" required>
+            </td>
+        </tr>
+    </table><br>
+    <button type="submit" id="submit-btn">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
